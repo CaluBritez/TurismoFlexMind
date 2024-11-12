@@ -1,0 +1,47 @@
+<meta http-equiv="Content-Type" content="text/html; charset='iso-8859-1'">
+<link href="../../../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../../../css/print.css" rel="stylesheet" type="text/css">
+<link href="../../../css/icons.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../../scripts/system/jquery/jquery-1.7.1.min.js"></script>
+<title>REPORTE</title>
+<style type="text/css" media="print"></style>
+<style type="text/css">
+    body {
+        padding: 10px 0 0 10px;
+    }
+	table {
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+
+    tbody {
+        background-color: white;
+    }
+	td {
+		border: 1px solid black;
+	}
+	.fondoYellow {
+		background-color: yellow;
+	}
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#list tr:even").addClass("alt");
+    });
+</script>
+
+<table>
+    <tr class="fondoYellow">
+        <td colspan="2" align="center">
+            <h2>REPORTE</h2>
+        </td>
+    </tr>
+    <tr>
+        <th align="left">Lugar</th>
+        <th align="left">Descripción</th>
+    </tr>
+    <tbody id="list">
+        {LISTADO}
+    </tbody>
+</table>

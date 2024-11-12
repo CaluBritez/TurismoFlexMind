@@ -1,0 +1,18 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#form_{form}").flexform({
+        title: '{title}',
+        fields: [
+          {fields}
+        ],
+        buttons: [
+          {name: 'Limpiar', bclass: 'clean', type:"reset", onpress: false},
+          {separator: true},
+          {name: 'Ver reporte window', bclass: 'print', url: '{urlWindow}', type:"button", onpress: 'reportWindow'},
+          {separator: true},
+          {name: 'Ver reporte div', bclass: 'report', url: '{urlSelf}', type:"button", onpress: 'reportSelf'}, 
+         ]
+    });
+  });   
+  </script>	
+  <form id="form_{form}"  name="form_{form}" class="formular" method="post" action=""></form>
